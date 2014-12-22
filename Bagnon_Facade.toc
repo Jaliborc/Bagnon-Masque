@@ -4,10 +4,9 @@
 ## Author: Jaliborc (João Cardoso)
 ## X-Category: Inventory
 ## X-License: GNU General Public License Version 3
-## Version: 6.0.15
 
 ## SavedVariables: BagnonFacade_Settings
 ## Dependencies: Bagnon, Masque
-## Version: 12
+## Version: 13
 
 Bagnon_Facade.lua

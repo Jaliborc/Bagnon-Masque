@@ -36,20 +36,15 @@ function ItemSlot:SetParent(parent)
 	
 	if self:GetFrameID() then
 		Masque:Group('Bagnon', self:GetFrameID()):AddButton(self, {
-			Count = _G[name .. 'Count'],
-			Icon = _G[name .. 'IconTexture'],
-			Normal = _G[name .. 'NormalTexture'],
+			Count = self.Count or _G[name .. 'Count'],
+			Icon = self.icon or _G[button:GetName() .. 'IconTexture'],
 			
+			Normal = self:GetNormalTexture(),
 			Highlight = self:GetHighlightTexture(),
 			Pushed = self:GetPushedTexture(),
 			
-			Cooldown = self.cooldown,
-			Border = self.border,
-			
-			AutoCastable = false, AutoCast = false,
-			HotKey = false, Name = false, Duration = false,
-			Disabled = false, Checked = false,
-			Flash = false,
+			Cooldown = self.Cooldown,
+			Border = self.Border,
 		})
 	end
 end
