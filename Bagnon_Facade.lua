@@ -24,20 +24,25 @@ Masque:Group('Bagnon', 'guildbank')
 Masque:Group('Bagnon', 'voidstorage')
 
 local ItemSlot = Bagnon.ItemSlot
-local SetParent = ItemSlot.SetParent
+local SetTarget, Free = ItemSlot.SetTarget, ItemSlot.Free
 
-function ItemSlot:SetParent(parent)
+function ItemSlot:Free()
 	if self:GetFrameID() then
 		Masque:Group('Bagnon', self:GetFrameID()):RemoveButton(self)
 	end
 
-	local name = self:GetName()
-	SetParent(self, parent)
+	Free(self)
+end
+
+function ItemSlot:SetTarget(...)
+	SetTarget(self, ...)
 	
 	if self:GetFrameID() then
+		local name = self:GetName()
+
 		Masque:Group('Bagnon', self:GetFrameID()):AddButton(self, {
 			Count = self.Count or _G[name .. 'Count'],
-			Icon = self.icon or _G[button:GetName() .. 'IconTexture'],
+			Icon = self.icon or _G[name .. 'IconTexture'],
 			
 			Normal = self:GetNormalTexture(),
 			Highlight = self:GetHighlightTexture(),
