@@ -1,4 +1,4 @@
-## Interface: 60100
+## Interface: 60200
 ## Title: |cff20ff20Bagnon Facade|r
 ## Notes: Allows ButtonFacade to skin Bagnon windows
 ## Author: Jaliborc (João Cardoso)

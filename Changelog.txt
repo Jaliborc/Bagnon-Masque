@@ -1,3 +1,6 @@
+====== 15
+* Updated for Fury of Hellfire
+
 ====== 14
 * Updated for Bagnon 6.1
 
