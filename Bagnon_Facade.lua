@@ -1,5 +1,5 @@
 --[[
-Copyright 2011-2016 João Cardoso
+Copyright 2011-2017 João Cardoso
 Bagnon Facade is distributed under the terms of the GNU General Public License (or the Lesser GPL).
 This file is part of Bagnon Facade.
 
@@ -18,38 +18,54 @@ along with Bagnon Facade. If not, see <http://www.gnu.org/licenses/>.
 --]]
 
 local Masque = LibStub('Masque')
-Masque:Group('Bagnon', 'inventory')
-Masque:Group('Bagnon', 'bank')
-Masque:Group('Bagnon', 'guildbank')
-Masque:Group('Bagnon', 'voidstorage')
-
-local ItemSlot = Bagnon.ItemSlot
-local SetTarget, Free = ItemSlot.SetTarget, ItemSlot.Free
-
-function ItemSlot:Free()
-	if self:GetFrameID() then
-		Masque:Group('Bagnon', self:GetFrameID()):RemoveButton(self)
-	end
-
-	Free(self)
+for i, frameID in ipairs {'inventory', 'bank', 'guildbank', 'voidstorage'} do
+	Masque:Group('Bagnon', frameID .. ' - items')
+	Masque:Group('Bagnon', frameID .. ' - bags')
 end
 
-function ItemSlot:SetTarget(...)
-	SetTarget(self, ...)
-	
-	if self:GetFrameID() then
-		local name = self:GetName()
+local Item, Bag = Bagnon.ItemSlot, Bagnon.Bag
+local NewItem, FreeItem = Item.New, Item.Free
+local NewBag = Bag.New
 
-		Masque:Group('Bagnon', self:GetFrameID()):AddButton(self, {
-			Count = self.Count or _G[name .. 'Count'],
-			Icon = self.icon or _G[name .. 'IconTexture'],
-			
-			Normal = self:GetNormalTexture(),
-			Highlight = self:GetHighlightTexture(),
-			Pushed = self:GetPushedTexture(),
-			
-			Cooldown = self.Cooldown,
-			Border = self.Border,
-		})
+function Item:New(...)
+	local button = NewItem(self, ...)
+	local name = button:GetName()
+
+	Masque:Group('Bagnon', button:GetFrameID() .. ' - items'):AddButton(button, {
+		Count = button.Count or _G[name .. 'Count'],
+		Icon = button.icon or _G[name .. 'IconTexture'],
+
+		Normal = button:GetNormalTexture(),
+		Highlight = button:GetHighlightTexture(),
+		Pushed = button:GetPushedTexture(),
+
+		Cooldown = button.Cooldown,
+		Border = button.Border,
+	})
+
+	return button
+end
+
+function Item:Free()
+	if self:GetFrameID() then
+		Masque:Group('Bagnon', self:GetFrameID() .. ' - items'):RemoveButton(self)
 	end
+
+	FreeItem(self)
+end
+
+function Bag:New(...)
+	local button = NewBag(self, ...)
+
+	Masque:Group('Bagnon', button:GetFrameID() .. ' - bags'):AddButton(button, {
+		Count = button.Count,
+		Icon = button.Icon,
+
+		Normal = button:GetNormalTexture(),
+		Highlight = button:GetHighlightTexture(),
+		Pushed = button:GetPushedTexture(),
+		Checked = button:GetCheckedTexture(),
+	})
+
+	return button
 end

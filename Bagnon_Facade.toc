@@ -1,4 +1,4 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: |cff20ff20Bagnon Facade|r
 ## Notes: Allows ButtonFacade to skin Bagnon windows
 ## Author: Jaliborc (João Cardoso)
@@ -7,6 +7,6 @@
 
 ## SavedVariables: BagnonFacade_Settings
 ## Dependencies: Bagnon, Masque
-## Version: 16
+## Version: 17
 
 Bagnon_Facade.lua
