@@ -5,5 +5,5 @@
 
 
 # Bagnon Facade :art:
-Bagnon Facade allows you to skin your [Bagnon](https://github.com/tullamods/Bagnon) windows with any [Masque](https://github.com/StormFX/Masque) skin.
+Allows you to skin your [Bagnon](https://github.com/tullamods/Bagnon) windows with any [Masque](https://github.com/StormFX/Masque) skin.
 Logically, it requires both [Bagnon](https://github.com/tullamods/Bagnon) and [Masque](https://github.com/StormFX/Masque) to work.
