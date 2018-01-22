@@ -1,3 +1,6 @@
+##### 18
+* Updated for Shadow of Argus
+
 ##### 17
 * Updated for Bagnon 7.2 onwards
 * Now can skin bag buttons as well (can be configured separately)
