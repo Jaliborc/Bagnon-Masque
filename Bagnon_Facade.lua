@@ -1,20 +1,18 @@
 --[[
 Copyright 2011-2017 João Cardoso
-Bagnon Facade is distributed under the terms of the GNU General Public License (or the Lesser GPL).
-This file is part of Bagnon Facade.
+Bagnon Facade is distributed under the terms of the GNU General Public License (Version 3).
+As a special exception, the copyright holders of this addon do not give permission to
+redistribute and/or modify it.
 
-Bagnon Facade is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Bagnon Facade is distributed in the hope that it will be useful,
+This addon is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Bagnon Facade. If not, see <http://www.gnu.org/licenses/>.
+along with the addon. If not, see <http://www.gnu.org/licenses/gpl-3.0.txt>.
+
+This file is part of Bagnon Facade.
 --]]
 
 local Masque = LibStub('Masque')

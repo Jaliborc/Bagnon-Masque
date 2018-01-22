@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Title: |cff20ff20Bagnon Facade|r
-## Notes: Allows ButtonFacade to skin Bagnon windows
+## Notes: Allows Masque to skin Bagnon windows
 ## Author: Jaliborc (João Cardoso)
 ## X-Category: Inventory
 ## X-License: GNU General Public License Version 3
