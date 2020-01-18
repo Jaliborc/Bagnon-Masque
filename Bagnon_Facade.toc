@@ -1,12 +1,10 @@
-## Interface: 70300
+## Interface: 11303
 ## Title: |cff20ff20Bagnon Facade|r
 ## Notes: Allows Masque to skin Bagnon windows
 ## Author: Jaliborc (João Cardoso)
 ## X-Category: Inventory
 ## X-License: GNU General Public License Version 3
-
-## SavedVariables: BagnonFacade_Settings
 ## Dependencies: Bagnon, Masque
-## Version: 18
+## Version: 8.3.0
 
 Bagnon_Facade.lua
