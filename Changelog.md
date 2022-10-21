@@ -1,3 +1,6 @@
+#### 9.1.0
+* Updated for Chains of Domination
+
 #### 8.3.0
 * Updated for Visions of Nzoth.
 
