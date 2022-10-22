@@ -1,7 +1,11 @@
-#### 9.1.0
+#### 10
+* Updated for Dragonflight pre-patch.
+* Changed outdated name for clarity (was Bagnon Facade).
+
+#### 9.1
 * Updated for Chains of Domination
 
-#### 8.3.0
+#### 8.3
 * Updated for Visions of Nzoth.
 
 ##### 8.2.1

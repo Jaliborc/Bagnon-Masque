@@ -1,5 +1,5 @@
 --[[
-Copyright 2011-2020 João Cardoso
+Copyright 2011-2022 João Cardoso
 Bagnon Masque is distributed under the terms of the GNU General Public License (or the Lesser GPL).
 This file is part of Bagnon Masque.
 
@@ -17,9 +17,9 @@ You should have received a copy of the GNU General Public License
 along with Bagnon Masque. If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local Addon = Bagnon or Combuctor
-if not Addon then return end
 local Masque = LibStub('Masque')
+local Addon = Bagnon or Bagnonium
+if not Addon then return end
 
 for i, frameID in ipairs {'inventory', 'bank', 'guildbank', 'voidstorage'} do
 	Masque:Group(Addon.Name, frameID .. ' - items')
