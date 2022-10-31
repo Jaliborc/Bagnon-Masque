@@ -38,13 +38,13 @@ function Item:New(...)
 	local name = b:GetName()
 
 	Masque:Group(Addon.Name, b:GetFrameID() .. ' - items'):AddButton(b, {
-		Count = b.Count or _G[name .. 'Count'],
-		Icon = b.icon or _G[name .. 'IconTexture'],
 		Normal = b:GetNormalTexture(),
 		Pushed = b:GetPushedTexture(),
 		Highlight = b:GetHighlightTexture(),
+		Count = b.Count or _G[name .. 'Count'],
+		Icon = b.icon or _G[name .. 'IconTexture'],
+		IconBorder  = b.IconGlow,
 		Cooldown = b.Cooldown,
-		Border = b.IconGlow,
 	})
 
 	b.IconBorder:SetAlpha(0)
