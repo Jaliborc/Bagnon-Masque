@@ -1,3 +1,7 @@
+##### 10.2
+* TOC update.
+* Updated for Bagnon's new plugin presentation rules.
+
 #### 10
 * Updated for Dragonflight pre-patch.
 * Changed outdated name for clarity (was Bagnon Facade).
