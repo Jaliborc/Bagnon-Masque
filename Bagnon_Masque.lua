@@ -1,20 +1,6 @@
 --[[
-Copyright 2011-2022 João Cardoso
-Bagnon Masque is distributed under the terms of the GNU General Public License (or the Lesser GPL).
-This file is part of Bagnon Masque.
-
-Bagnon Masque is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Bagnon Masque is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Bagnon Masque. If not, see <http://www.gnu.org/licenses/>.
+	Copyright 2011-2024 João Cardoso
+	All Rights Reserved
 --]]
 
 local Masque = LibStub('Masque')
@@ -30,7 +16,7 @@ end
 --[[ Overrides ]]--
 
 local Item, Bag = Addon.Item, Addon.Bag
-local NewItem, ReleaseItem = Item.New, Item.Release
+local NewItem, ReleaseItem, UpdateItem = Item.New, Item.Release, Item.Update
 local NewBag = Bag.New
 
 function Item:New(...)
@@ -49,6 +35,11 @@ function Item:New(...)
 
 	b.IconBorder:SetAlpha(0)
 	return b
+end
+
+function Item:Update()
+	UpdateItem(self)
+	self.IconBorder:SetAlpha(0)
 end
 
 function Item:Release()
