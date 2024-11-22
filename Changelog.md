@@ -1,4 +1,7 @@
-### 11.0
+### 11.1
+* TOC update.
+
+## 11
 * Added StormFX's proposed fix to border alpha.
 
 ### 10.2
