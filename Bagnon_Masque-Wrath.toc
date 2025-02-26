@@ -1,10 +1,12 @@
 ## Title: |TInterface/Addons/BagBrother/Art/Bagnon-Plugin:16:16|t Bagnon |cff20ff20Masque Support|r
 ## Notes: Lets you apply Masque skins to Bagnon|nand Bagnonium windows.|n|cffbbbbbbBy João Cardoso|r|n|n|TInterface/Addons/BagBrother/Art/Patreon:12:12|t |cff82c5ffpatreon.com/jaliborc|r|n|TInterface/Addons/BagBrother/Art/Paypal:12:12|t |cff82c5ffpaypal.me/jaliborc|r|n|TInterface/Addons/BagBrother/Art/Discord:12:12:0:-2|t |cff82c5ffbit.ly/discord-jaliborc|r|n|n
 ## Author: Jaliborc (João Cardoso)
+## X-License: All Rights Reserved
+## X-Category: Bags & Inventory
 
 ## Dependencies: Masque, BagBrother
 ## OptionalDeps: Bagnon, Bagnonium
 ## Interface: 30403
-## Version: 11.1
+## Version: 11.2
 
 Bagnon_Masque.lua
