@@ -1,4 +1,7 @@
-## 11.2
+### 11.3
+* Retail: Updated description to match the new addon list formatting.
+
+### 11.2
 * Retail: Added support for the new addon list native grouping capabilities.
 
 ### 11.1
