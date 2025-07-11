@@ -1,3 +1,6 @@
+### 11.4
+* Added support for Mists of Pandaria servers.
+
 ### 11.3
 * Retail: Updated description to match the new addon list formatting.
 

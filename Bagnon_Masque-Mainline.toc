@@ -8,7 +8,7 @@
 
 ## Dependencies: Masque, BagBrother
 ## OptionalDeps: Bagnon, Bagnonium
-## Interface: 110100
-## Version: 11.3
+## Interface: 110105
+## Version: 11.4
 
 Bagnon_Masque.lua
