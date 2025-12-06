@@ -1,3 +1,6 @@
+### 11.7
+* Retail: Added support for Midnight open beta.
+
 ### 11.6
 * Retail: Updated TOC to 12.2.5.
 
