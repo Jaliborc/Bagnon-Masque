@@ -1,3 +1,6 @@
+### 11.8
+* Added support for Burning Crusade Anniversary realms.
+
 ### 11.7
 * Retail: Added support for Midnight open beta.
 
