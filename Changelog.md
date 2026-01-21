@@ -1,3 +1,6 @@
+## 12.0.0
+* Updated TOC numbers for Midnight live servers.
+
 ### 11.8
 * Added support for Burning Crusade Anniversary realms.
 
