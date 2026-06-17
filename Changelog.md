@@ -1,3 +1,6 @@
+### 12.0.1
+* Updated TOC numbers for Retail and Mists servers.
+
 ## 12.0.0
 * Updated TOC numbers for Midnight live servers.
 
