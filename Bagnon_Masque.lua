@@ -16,7 +16,7 @@ end
 --[[ Overrides ]]--
 
 local Item, Bag = Addon.Item, Addon.Bag
-local NewItem, ReleaseItem, UpdateItem = Item.New, Item.Release, Item.Update
+local NewItem, UpdateBorder = Item.New, Item.UpdateBorder
 local NewBag = Bag.New
 
 function Item:New(...)
@@ -32,22 +32,13 @@ function Item:New(...)
 		IconBorder  = b.IconGlow,
 		Cooldown = b.Cooldown,
 	})
-
-	b.IconBorder:SetAlpha(0)
+	
 	return b
 end
 
-function Item:Update()
-	UpdateItem(self)
+function Item:UpdateBorder()
+	UpdateBorder(self)
 	self.IconBorder:SetAlpha(0)
-end
-
-function Item:Release()
-	if self:GetFrameID() then
-		Masque:Group(Addon.Name, self:GetFrameID() .. ' - items'):RemoveButton(self)
-	end
-
-	ReleaseItem(self)
 end
 
 function Bag:New(...)

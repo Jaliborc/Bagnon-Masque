@@ -1,3 +1,7 @@
+### 12.1.1
+* Added support for Forever.
+* Fixed a visual issue that could occur on some situations.
+
 ## 12.1
 * Added support for 12.1 servers and the new classic TOC format.
 
