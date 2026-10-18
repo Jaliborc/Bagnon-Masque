@@ -1,3 +1,6 @@
+### 12.1.2
+* TOC Update
+
 ### 12.1.1
 * Added support for Forever.
 * Fixed a visual issue that could occur on some situations.
